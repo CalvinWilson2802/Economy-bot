@@ -302,7 +302,7 @@ client.on("message", async message => {
 \`snipe\`, \`beg\`, \`afk\`, \`rich\`, \`updaterich\`, \`time\`, \`avatar\` \`urban\` \`github\`, \`ssweb\`, \`avatar\` 
 
 🚀**Growtopia commands**
-\`gtonline\`, \`gtworld\` \`gtwotd\` \`hostmaker\` 
+\`gtonline\`, \`gtworld\` \`gtwotd\` \`\` 
 
 🛡️**Samp Command**
 \`samp\`
@@ -3593,38 +3593,6 @@ well these are lists of rules, if you can't follow the rules you can just remove
                     message.lineReply(Embed)
             })
         } catch (err) {}
-    } else if (command == "hostmaker") {
-        const ips = args[0];
-        const fakeip = args[1];
-        if (!ips) {
-            return message.reply(`Please input the ip.`)
-        } else if (!fakeip) {
-            return message.lineReply(`Please input how much fake ip you want to generate\nFor example: ${prefix}${command} 127.0.0.1 100`)
-        } else if (fakeip < 1) {
-            return message.lineReply("What would you use this instead make your own hosts?");
-        } else if (isNaN(+fakeip) == true) {
-            return message.reply("you can't use string to generate fake ip");
-        } else if (fakeip > 2000) {
-            return message.lineReply(`-_- Cannot generate fake ips more than 2000 variable.`);
-        }
-        try {
-            var total = "#" + randomNum(0, 255) + "." + randomNum(0, 255) + "." + randomNum(0, 255) + "." + randomNum(0, 254) + " growtopia1.com\n";
-            for (var a = 1; a < args[1]; a++) {
-                total += "#" + randomNum(0, 255) + "." + randomNum(0, 255) + "." + randomNum(0, 255) + "." + randomNum(0, 254) + " growtopia1.com\n";
-            }
-            total += args[0] + "growtopia1.com\n" + args[0] + "growtopia2.com\n";
-            for (var a = 1; a < args[1]; a++) {
-                total += "#" + randomNum(0, 255) + "." + randomNum(0, 255) + "." + randomNum(0, 255) + "." + randomNum(0, 254) + " growtopia2.com\n";
-            }
-            fs.writeFileSync("./host/hosts", total);
-            return message.channel.send("Here you go", {
-                files: ["./host/hosts"]
-            });
-        } catch (err) {
-            console.log(err);
-            return message.channel.send("Something went wrong.");
-        }
-
     } else if (command == "samp") {
         const ip = args[0]
         const port = args[1]
