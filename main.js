@@ -1,20 +1,9 @@
 const Discord = require("discord.js");
 const inlinereply = require('discord-reply');
-const client = new Discord.Client({
-    disableMentions: "everyone", //THIS o
-    intents: [
-        "GUILDS",
-        "GUILD_MESSAGES",
-        "GUILD_INTEGRATIONS",
-        "GUILD_VOICE_STATES",
-        "GUILD_MESSAGE_REACTIONS",
-        "DIRECT_MESSAGES"
-    ] //optional
-});
+const { Client, Intents } = require('discord.js');
+const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] });
 const snipes = new Discord.Collection();
 const snipes2 = new Discord.Collection();
-const https = require('https');
-const cheerio = require("cheerio")
 const moment = require('moment') //npm i moment
 const request = require('request');
 const querystring = require('querystring');
