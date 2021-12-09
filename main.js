@@ -296,84 +296,9 @@ client.on("message", async message => {
 **Watching ${client.guilds.cache.size} Servers**
 `)
 	.setColor("#0000FF")
-            .setFooter(
-                `Requested by ${message.author.tag}`,
-                message.author.displayAvatarURL({
-                    dynamic: true
-                })
-            )
-            .setTimestamp();
+	.setFooter(`Requested by ${message.author.tag}`, message.author.displayAvatarURL({ dynamic: true }))
+        .setTimestamp();
         message.lineReply(embed);
-    } else if (command == "changelogs") {
-        const embed = new Discord.MessageEmbed()
-            .setTitle(`Change Logs`)
-            .setDescription(`
-- Disk overload fixed deleted all player data. **Thursday, October 21, 2021**
-- Disabled command for **drop**, and **esnipe** due disk overload. **Thursday, October 21, 2021**
-- Added Ignore cooldown for **afk** command for first 1 minute. **Thursday, October 14, 2021**
-- **"qqb"** and **"csnb"** would not able to use forever :) **Tuesday, October 12, 2021**
-- fixed "**afk**"" command **Tuesday, October 12, 2021**
-- Added "**esnipe**"" command (edited message sniper) **Tuesday, October 12, 2021**
-- Added "**urban**"" command **Saturday, October 9, 2021**
-- "**sswebsite**"" has been enabled back **Saturday, October 9, 2021**
-- Fixed **"bj"** command **Saturday, October 9, 2021**
-- Fixed **"qqb"** command, **"csb"** is disbaled for while **Friday, October 1, 2021**
-- **"qqb"** and **"csnb"** have been enabled back! **Tuesday, September 28, 2021**
-- Added "**snipe**" command. **Tuesday, September 28, 2021**
-- Added "**updaterich**" for update rich classement with cooldown 5 minutes. **Sunday, September 26, 2021**
-- Added "**rich**" command. **Sunday, September 26, 2021**
-- Added "**BJ**" command. **Monday, September 20, 2021**
-- Added farmable system. **Sunday, September 19, 2021**
-- Disabled command "**qqb**", "**csnb**". **Saturday, September 18, 2021**`)
-            .setColor("#0000FF")
-        return message.channel.send(embed)
-    } else if (command == "credit") {
-        const embed = new Discord.MessageEmbed()
-            .setTitle("Bot Credits")
-            .setDescription(
-                `
-NoTaBot Made by Galvin#7778 Special thanks to:
-\`- GuckTubeYT#3123\`
-\`- fuuto#1234\`
-\`- JadlionHD#0987\`
-\`- Cyrus#8009\`
-`
-            )
-            .setColor("#0000FF")
-            .setFooter(
-                `Requested by ${message.author.tag}`,
-                message.author.displayAvatarURL({
-                    dynamic: true
-                })
-            )
-            .setTimestamp();
-        message.lineReply(embed);
-    } else if (command == "rules") {
-        const embed = new Discord.MessageEmbed()
-            .setTitle(`Bot Rules.`)
-            .setDescription(`
-well these are lists of rules, if you can't follow the rules you can just remove the bot simple as that.
-
-1. **There is no tolerance for 3rd party client users or something like that, if they are caught they will be blacklisted from the bot forever**.
-
-2. **Servers that have the potential to harm bots will be removed by Bot Administrators such as (developing hacks servers, Auto Farming servers, and servers that have ties to raids)**
-`)
-            .setColor("#0000FF")
-        return message.channel.send(embed)
-    } else if (command == "invite") {
-        const embed = new Discord.MessageEmbed()
-            .setTitle("Bot invitation link")
-            .setURL(
-                "https://discord.com/oauth2/authorize?client_id=822068130989342731&permissions=3154173014&scope=bot"
-            )
-            .setFooter(
-                `😎 Requested by ${message.author.tag}`,
-                message.author.displayAvatarURL({
-                    dynamic: true
-                })
-            )
-            .setTimestamp();
-        return message.lineReply(embed);
     } else if (command == "gems" || command == "info" || command == "information" || command == "inventory" || command == "bal") {
         try {
             const mention = getUserFromMention(args[0]);
