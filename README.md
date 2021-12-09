@@ -7,6 +7,7 @@ Super Fast economy Bot saves with JSON
 - **This source written on discord.js 12, so it won't work though if you use discord.js 13 or others version higher.**
 - **If you want rewrite my bot source from `djs12` to `djs13` ill very appreciate it, Let me know! (just pull request)**
 - **Since this project is my old bot project i won't update new commands or something feel free to use it.**
+- **IF you ask why i make my source without command handler, because it's make me easier to modify or add command.**
 
 # Features 
 1. Economy system.
