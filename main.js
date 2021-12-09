@@ -3459,46 +3459,6 @@ well these are lists of rules, if you can't follow the rules you can just remove
             });
 
         } catch (err) {}
-    } else if (command == "sdatareader") {
-        const ip = args.join(' ')
-        if (!ip) {
-            return message.lineReply(`You need to fetch something, use your brain cells.`);
-        }
-        const error = new Discord.MessageEmbed()
-            .setTitle("❎ Error (cannot connect to server)")
-            .setURL("https://github.com/Galvin0705/growtopia-server_data.php-read/")
-            .setColor("RANDOM")
-            .setFooter(`server_data.php reader`, message.author.displayAvatarURL({
-                dynamic: true
-            }))
-            .setTimestamp();
-        const host = packet1[Math.floor(Math.random() * packet1.length)];
-        const contentlength = packet2[Math.floor(Math.random() * packet2.length)];
-        try {
-            fetch("http://" + ip + "/growtopia/server_data.php", {
-                method: "POST",
-                headers: {
-                    "Accept": "*/*",
-                    "Host": host,
-                    "Content-Type": "application/x-www-form-urlencoded",
-                    "Content-Length": contentlength,
-                    "user-agent": ""
-                },
-                body: 'version=3%2E71&platform=0&protocol=146'
-            }).then(data => data.text()).then(response => {
-                console.log(response.statusCode)
-                const embed3 = new Discord.MessageEmbed()
-                    .setTitle("server_Data.php reader")
-                    .setURL("https://github.com/Galvin0705/growtopia-server_data.php-read/")
-                    .setDescription(`${response}`)
-                    .setColor("RANDOM")
-                    .setFooter(`server_data.php reader`, message.author.displayAvatarURL({
-                        dynamic: true
-                    }))
-                    .setTimestamp()
-                return message.lineReply(embed3).catch(err => message.lineReply(error))
-            }).catch(err => message.lineReply(error))
-        } catch (err) {}
     } else if (command === "gtworld") {
         let world = args[0];
         if (!world)
