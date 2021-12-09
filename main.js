@@ -21,9 +21,7 @@ const limitation11 = new Set(); //begging
 const limitation12 = new Set(); //rich
 const limitation13 = new Set(); //rich
 const fetch = require('node-fetch-npm')
-let date_ob = new Date();
 const config = require("./harga.json");
-const config2 = require("./bot2.json");
 
 var word = [
     "vladimir putin",
@@ -152,13 +150,6 @@ client.on("messageDelete", message => {
 
 //
 client.on("message", async message => {
-    // if (message.content.includes(/<@.?[0-9]*?>/g)) {
-    //Replace All Message Mentions Into Nothing
-    //message = message.replace(/<@.?[0-9]*?>/g, "");
-    //};
-    if (config2.maintenance == true) {
-        return;
-    }
     const data = `{"user":"${message.author.id}", "money":50000, "afk":0, "afkmessage":"", "pickaxe":0, "diamondlock":0, "worldlock": 0, "playid":0, "ances":0, "ban":0, "banreason":"", "deposit":0, "farmuser":0, "farmable":0, "capcha":0, "code":0, "wrong":0, "richbadge":0, "claimedrichbadge":0, "createdaccount":"<t:${Date.now()/1000 | 0}:F>", "roleid":0, "afkguildid":0, "afkdate":"", "afknow":0}`;
     const data2 = data;
     const channel = `{"channelname":"${message.channel.id}", "channelgems":0}, "oldMessage":"null", "newMessage":"null", "author":"null"`;
