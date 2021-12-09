@@ -294,9 +294,8 @@ client.on("message", async message => {
 **http://bit.ly/guckproject**
 
 **Watching ${client.guilds.cache.size} Servers**
-`
-            )
-            .setColor("#0000FF")
+`)
+	.setColor("#0000FF")
             .setFooter(
                 `Requested by ${message.author.tag}`,
                 message.author.displayAvatarURL({
