@@ -1,7 +1,7 @@
 ![Node](https://img.shields.io/badge/NODEJS-Stable-orange)
 
 # Economy-bot
-Super Fast economy Bot saved on JSON
+Super Fast economy Bot saves with JSON
 
 # Faq
 <br /> This source written on discord.js 12, so it won't work though if you use discord.js 13 or others version higher.
