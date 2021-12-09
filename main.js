@@ -117,10 +117,6 @@ function randomNum(min, max) {
     return Math.flofor(Math.random() * (max - min + 1)) + min;
 }
 
-
-const httpsAgent = new https.Agent({
-    rejectUnauthorized: false,
-});
 client.on("ready", () => {
     console.log(`${client.user.tag} now online!`);
     client.user.setActivity('Hi, my prefix is.help')
