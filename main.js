@@ -107,10 +107,6 @@ function bj() {
 function rob() {
     return Math.floor(Math.random() * 21 + 0);
 }
-
-const packet1 = ["growtopia1.com", 'growtopia2.com'];
-const packet2 = ['38', '37'];
-
 function randomNum(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
