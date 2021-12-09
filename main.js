@@ -313,16 +313,9 @@ client.on("message", async message => {
                     if (user2.roleid == 1000) {
                         const embeds = new Discord.MessageEmbed()
                             .setTitle(`${mention.tag}'s information`)
-                            .setDescription(
-                                `\n**Badge:**\n**⚡ Bot Staff Badge**\n**🛠️ Bot Bug Hunter**\n**Rich Badge 🎖️**\n\n⏲️ **Created database** ${user2.createdaccount}\n💵 **Wallet** ${user2.money.toLocaleString()}$\n⛏️ **PickAxe** ${
-                user2.pickaxe
-              }\n💫 **Ances** ${
-                user2.ances
-              }\n💰 **Bank (deposited gems)** ${user2.deposit.toLocaleString()}$\n🌱 **Farmable** ${user2.farmable}`
-                            )
+                            .setDescription(`\n**Badge:**\n**⚡ Bot Staff Badge**\n**🛠️ Bot Bug Hunter**\n**Rich Badge 🎖️**\n\n⏲️ **Created database** ${user2.createdaccount}\n💵 **Wallet** ${user2.money.toLocaleString()}$\n⛏️ **PickAxe** ${user2.pickaxe}\n💫 **Ances** ${user2.ances}\n💰 **Bank (deposited gems)** ${user2.deposit.toLocaleString()}$\n🌱 **Farmable** ${user2.farmable}`)
                             .setColor("#0000FF")
-                            .setFooter(
-                                `💰 Requested by ${message.author.tag}`,
+                            .setFooter(`💰 Requested by ${message.author.tag}`,
                                 message.author.displayAvatarURL({
                                     dynamic: true
                                 })
@@ -332,13 +325,7 @@ client.on("message", async message => {
                     } else if (user2.roleid == 1) {
                         const embeds = new Discord.MessageEmbed()
                             .setTitle(`${mention.tag}'s information`)
-                            .setDescription(
-                                `\n**Badge:**\n**🛠️ Bot Bug Hunter**\n**Rich Badge 🎖️**\n\n⏲️ **Created database** ${user2.createdaccount}\n💵 **Wallet** ${user2.money.toLocaleString()}$\n⛏️ **PickAxe** ${
-                user2.pickaxe
-              }\n💫 **Ances** ${
-                user2.ances
-              }\n💰 **Bank (deposited gems)** ${user2.deposit.toLocaleString()}$\n🌱 **Farmable** ${user2.farmable}`
-                            )
+                            .setDescription(`\n**Badge:**\n**🛠️ Bot Bug Hunter**\n**Rich Badge 🎖️**\n\n⏲️ **Created database** ${user2.createdaccount}\n💵 **Wallet** ${user2.money.toLocaleString()}$\n⛏️ **PickAxe** ${user2.pickaxe}\n💫 **Ances** ${user2.ances}\n💰 **Bank (deposited gems)** ${user2.deposit.toLocaleString()}$\n🌱 **Farmable** ${user2.farmable}`)
                             .setColor("#0000FF")
                             .setFooter(
                                 `💰 Requested by ${message.author.tag}`,
@@ -351,13 +338,7 @@ client.on("message", async message => {
                     } else if (user2.richbadge == 1 && user2.claimedrichbadge == 1) {
                         const embed = new Discord.MessageEmbed()
                             .setTitle(`${mention.tag}'s information`)
-                            .setDescription(
-                                `\n**Badge:**\n**Rich Badge 🎖️**\n\n⏲️ **Created database** ${user2.createdaccount}\n💵 **Wallet** ${user2.money.toLocaleString()}$\n⛏️ **PickAxe** ${
-                user2.pickaxe
-              }\n💫 **Ances** ${
-                user2.ances
-              }\n💰 **Bank (deposited gems)** ${user2.deposit.toLocaleString()}$\n🌱 **Farmable** ${user2.farmable}`
-                            )
+                            .setDescription(`\n**Badge:**\n**Rich Badge 🎖️**\n\n⏲️ **Created database** ${user2.createdaccount}\n💵 **Wallet** ${user2.money.toLocaleString()}$\n⛏️ **PickAxe** ${user2.pickaxe}\n💫 **Ances** ${user2.ances}\n💰 **Bank (deposited gems)** ${user2.deposit.toLocaleString()}$\n🌱 **Farmable** ${user2.farmable}`)
                             .setColor("#0000FF")
                             .setFooter(
                                 `💰 Requested by ${message.author.tag}`,
@@ -370,13 +351,7 @@ client.on("message", async message => {
                     } else {
                         const embed2 = new Discord.MessageEmbed()
                             .setTitle(`${mention.tag}'s information`)
-                            .setDescription(
-                                `**Badge:**\n\n**Created database** ${user2.createdaccount}\n💵 **Wallet** ${user2.money.toLocaleString()}$\n⛏️ **PickAxe** ${
-                user2.pickaxe
-              }\n💫 **Ances** ${
-                user2.ances
-              }\n💰 **Bank (deposited gems)** ${user2.deposit.toLocaleString()}$\n🌱 **Farmable** ${user2.farmable}`
-                            )
+                            .setDescription(`**Badge:**\n\n**Created database** ${user2.createdaccount}\n💵 **Wallet** ${user2.money.toLocaleString()}$\n⛏️ **PickAxe** ${user2.pickaxe}\n💫 **Ances** ${user2.ances}\n💰 **Bank (deposited gems)** ${user2.deposit.toLocaleString()}$\n🌱 **Farmable** ${user2.farmable}`)
                             .setColor("#0000FF")
                             .setFooter(
                                 `💰 Requested by ${message.author.tag}`,
@@ -393,13 +368,7 @@ client.on("message", async message => {
                     if (usermain2.roleid == 1000) {
                         const embeds = new Discord.MessageEmbed()
                             .setTitle(`${message.author.tag}'s information`)
-                            .setDescription(
-                                `\n**Badge:**\n**⚡ Bot Staff Badge**\n**🛠️ Bot Bug Hunter**\n**Rich Badge 🎖️**\n\n⏲️ **Created database** ${usermain2.createdaccount}\n💵 **Wallet** ${usermain2.money.toLocaleString()}$\n⛏️ **PickAxe** ${
-                usermain2.pickaxe
-              }\n💫 **Ances** ${
-                usermain2.ances
-              }\n💰 **Bank (deposited gems)** ${usermain2.deposit.toLocaleString()}$\n🌱 **Farmable** ${usermain2.farmable}`
-                            )
+                            .setDescription(`\n**Badge:**\n**⚡ Bot Staff Badge**\n**🛠️ Bot Bug Hunter**\n**Rich Badge 🎖️**\n\n⏲️ **Created database** ${usermain2.createdaccount}\n💵 **Wallet** ${usermain2.money.toLocaleString()}$\n⛏️ **PickAxe** ${usermain2.pickaxe}\n💫 **Ances** ${usermain2.ances}\n💰 **Bank (deposited gems)** ${usermain2.deposit.toLocaleString()}$\n🌱 **Farmable** ${usermain2.farmable}`)
                             .setColor("#0000FF")
                             .setFooter(
                                 `💰 Requested by ${message.author.tag}`,
@@ -413,13 +382,7 @@ client.on("message", async message => {
                     if (usermain2.roleid == 1) {
                         const embeds = new Discord.MessageEmbed()
                             .setTitle(`${message.author.tag}'s information`)
-                            .setDescription(
-                                `\n**Badge:**\n**🛠️ Bot Bug Hunter**\n**Rich Badge 🎖️**\n\n⏲️ **Created database** ${usermain2.createdaccount}\n💵 **Wallet** ${usermain2.money.toLocaleString()}$\n⛏️ **PickAxe** ${
-                usermain2.pickaxe
-              }\n💫 **Ances** ${
-                usermain2.ances
-              }\n💰 **Bank (deposited gems)** ${usermain2.deposit.toLocaleString()}$\n🌱 **Farmable** ${usermain2.farmable}`
-                            )
+                            .setDescription(`\n**Badge:**\n**🛠️ Bot Bug Hunter**\n**Rich Badge 🎖️**\n\n⏲️ **Created database** ${usermain2.createdaccount}\n💵 **Wallet** ${usermain2.money.toLocaleString()}$\n⛏️ **PickAxe** ${usermain2.pickaxe}\n💫 **Ances** ${usermain2.ances}\n💰 **Bank (deposited gems)** ${usermain2.deposit.toLocaleString()}$\n🌱 **Farmable** ${usermain2.farmable}`)
                             .setColor("#0000FF")
                             .setFooter(
                                 `💰 Requested by ${message.author.tag}`,
@@ -431,13 +394,7 @@ client.on("message", async message => {
                     if (usermain2.richbadge == 1 && usermain2.claimedrichbadge == 1) {
                         const embed = new Discord.MessageEmbed()
                             .setTitle(`${message.author.tag}'s information`)
-                            .setDescription(
-                                `\n**Badge:**\n**Rich Badge 🎖️**\n\n⏲️ **Created database** ${usermain2.createdaccount}\n💵 **Wallet** ${usermain2.money.toLocaleString()}$\n⛏️ **PickAxe** ${
-                usermain2.pickaxe
-              }\n💫 **Ances** ${
-                usermain2.ances
-              }\n💰 **Bank (deposited gems)** ${usermain2.deposit.toLocaleString()}$\n🌱 **Farmable** ${usermain2.farmable}`
-                            )
+                            .setDescription(`\n**Badge:**\n**Rich Badge 🎖️**\n\n⏲️ **Created database** ${usermain2.createdaccount}\n💵 **Wallet** ${usermain2.money.toLocaleString()}$\n⛏️ **PickAxe** ${usermain2.pickaxe}\n💫 **Ances** ${usermain2.ances}\n💰 **Bank (deposited gems)** ${usermain2.deposit.toLocaleString()}$\n🌱 **Farmable** ${usermain2.farmable}`)
                             .setColor("#0000FF")
                             .setFooter(
                                 `💰 Requested by ${message.author.tag}`,
@@ -450,13 +407,7 @@ client.on("message", async message => {
                     } else {
                         const embed4 = new Discord.MessageEmbed()
                             .setTitle(`${message.author.tag}'s Information`)
-                            .setDescription(
-                                `\n⏲️**Badge:**\n\n **Created database** ${usermain2.createdaccount}\n💵 **Wallet** ${usermain2.money.toLocaleString()}$\n⛏️ **PickAxe** ${
-                usermain2.pickaxe
-              }\n💫 **Ances** ${
-                usermain2.ances
-              }\n💰 **Bank (deposited gems)** ${usermain2.deposit.toLocaleString()}$\n🌱 **Farmable** ${usermain2.farmable}`
-                            )
+                            .setDescription(`\n⏲️**Badge:**\n\n **Created database** ${usermain2.createdaccount}\n💵 **Wallet** ${usermain2.money.toLocaleString()}$\n⛏️ **PickAxe** ${usermain2.pickaxe}\n💫 **Ances** ${usermain2.ances}\n💰 **Bank (deposited gems)** ${usermain2.deposit.toLocaleString()}$\n🌱 **Farmable** ${usermain2.farmable}`)
                             .setColor("#0000FF")
                             .setFooter(
                                 `💰 Requested by ${message.author.tag}`,
@@ -475,34 +426,6 @@ client.on("message", async message => {
                 `Failure on database found, please chat firstly before run command (auto create account doesn't read your action).`
             );
         }
-    } else if (command == "updatedatabase") {
-        try {
-            if (message.author.id == "780615402312433674") {} else {
-                return;
-            }
-            message.lineReply(
-                "Updating database... this process would take severial minutes."
-            );
-            fs.readdir("./channels", (err, files) => {
-                var filter = files.filter(f => f.split(".").pop() === "json");
-                for (i = 0; i < filter.length; i++) {
-                    let user = `./newusers/` + message.author.id + ".json";
-                    let user2 = require(user);
-                    user2.afknow = 0;
-                    user2.afknow2 = 0;
-                    fs.writeFile(user, JSON.stringify(user2), function writeJSON(err) {
-                        if (err) {
-                            return message.lineReply("Something went wrong on our database");
-                        } else {
-                            console.log("Successfully rewriting users on: ");
-                        }
-                    });
-                }
-            });
-        } catch (err) {
-            return message.lineReply("Something went wrong Replacing database has been stopped.");
-        }
-
     } else if (command == "minutelygems") {
         try {
             if (limitation.has(message.author.id)) {
